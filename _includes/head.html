@@ -21,4 +21,27 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    
+    <!-- BEGIN GCR Badge Code -->
+<script src="https://apis.google.com/js/platform.js?onload=renderBadge"
+  async defer>
+</script>
+
+<script>
+  window.renderBadge = function() {
+    var ratingBadgeContainer = document.createElement("div");
+      document.body.appendChild(ratingBadgeContainer);
+      window.gapi.load('ratingbadge', function() {
+        window.gapi.ratingbadge.render(
+          ratingBadgeContainer, {
+            // REQUIRED
+            "merchant_id": MERCHANT_ID,
+            // OPTIONAL
+            "position": "POSITION"
+          });           
+     });
+  }
+</script>
+<!-- END GCR Badge Code -->
+    
 </head>
