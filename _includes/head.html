@@ -22,7 +22,9 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     
-    <!-- BEGIN GCR Badge Code -->
+
+    
+<!-- BEGIN GCR Badge Code -->
 <script src="https://apis.google.com/js/platform.js?onload=renderBadge"
   async defer>
 </script>
@@ -30,18 +32,25 @@
 <script>
   window.renderBadge = function() {
     var ratingBadgeContainer = document.createElement("div");
-      document.body.appendChild(ratingBadgeContainer);
-      window.gapi.load('ratingbadge', function() {
-        window.gapi.ratingbadge.render(
-          ratingBadgeContainer, {
-            // REQUIRED
-            "merchant_id": 120314481,
-            // OPTIONAL
-            "position": "BOTTOM_LEFT"
-          });           
-     });
+    document.body.appendChild(ratingBadgeContainer);
+    window.gapi.load('ratingbadge', function() {
+      window.gapi.ratingbadge.render(
+        ratingBadgeContainer, {
+          "merchant_id": 120314481,
+          "position": "BOTTOM_LEFT"
+        });
+    });
   }
 </script>
 <!-- END GCR Badge Code -->
+
+<!-- BEGIN GCR Language Code -->
+<script>
+  window.___gcfg = {
+    lang: 'en_US'
+  };
+</script>
+<!-- END GCR Language Code -->
+    
     
 </head>
