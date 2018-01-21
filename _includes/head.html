@@ -31,7 +31,6 @@
   window.renderBadge = function() {
     var ratingBadgeContainer = document.createElement("div");
       document.body.appendChild(ratingBadgeContainer);
-      console.log('aaaa');
       window.gapi.load('ratingbadge', function() {
         window.gapi.ratingbadge.render(
           ratingBadgeContainer, {
